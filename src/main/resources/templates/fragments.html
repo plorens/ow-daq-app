@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>spring-thymeleaf-fragments</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+
+</head>
+<body>
+
+<header th:fragment="header">
+    <li class="fragment"><a class="active" href="/index.html">Home</a></li>
+    <li class="fragment"><a href="/readings">Readings</a></li>
+    <li class="fragment"><a href="/adapters">Adapters</a></li>
+    <li class="fragment"><a href="/sites">Sites</a></li>
+    <li class="fragment"><a href="/sensors">Sensors</a></li>
+    <li class="fragment"><a href="/chart">Chart</a></li>
+    <li class="fragment"><a href="/eventlogs">EventLogs</a></li>
+    <li class="fragment"><a href="/about">About</a></li>
+</header>
+
+<footer th:fragment="footer">
+    <li class="fragment"><i>Copyright © Piotr Company</i></li>
+    <li class="fragment"><i>tytyryty</i></li>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>OwDAQ Adapters</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://jira.xwiki.org/secure/attachment/34823/Icons8-Windows-8-Numbers-1-Black.ico" />
+
+    <div th:insert="fragments :: header">...</div>
+</head>
+<body>
+
+<center>
+
+    <br>
+    <br>
+    <b>Adapter List</b>
+    <br>
+    <br>
+
+    <table class="readings" width="60%">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>PORT</th>
+            <th>STATUS</th>
+            <th>action 1</th>
+            <th>action 2</th>
+        </tr>
+        </thead>
+        <th:block th:each="owa : ${installedAdapters}">
+            <tr>
+                <td th:text="${owa.ID}"></td>
+                <td th:text="${owa.NAME}"></td>
+                <td th:text="${owa.PORT}"></td>
+                <td th:text="${owa.STATUS}"></td>
+                <!-- <td><a th:href="@{/adapters/delete(ID=${owa.ID})}">delete</a></td> -->
+                <td><button type="button" th:attr="id=${owa.ID}" onclick="confirmDelete(this)">delete</button></td>
+                <td><button type="button" onclick="fillFormData(this.parentNode)">edit</button></td>
+            </tr>
+        </th:block>
+        <tr>
+            <td colspan="6"><button type="button" onclick="fillFormToAdd()" title="Click to add new adapter"><b>+</b></button></td>
+        </tr>
+    </table>
+
+    <hr>
+    <br>
+
+    <form action="#" th:action="@{/adapters}" method="POST">
+        <table>
+            <tr>
+                <td>ID:</td>
+                <td>
+                    <input readonly="true" id="fillId" type="text" name="ID" />
+                </td>
+            </tr>
+            <tr>
+                <td>NAME:</td>
+                <td>
+                    <input id="fillName" type="text" name="NAME" />
+                </td>
+            </tr>
+            <tr>
+                <td>PORT:</td>
+                <td>
+                    <input id="fillPort" type="text" name="PORT" />
+                </td>
+            </tr>
+            <tr>
+                <td>STATUS:</td>
+                <td>
+                    <select id="fillStatus" name="STATUS">
+                        <option value="A">Active</option>
+                        <option value="D">Disabled</option>
+                        <option value="M">Maintenance</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</center>
+
+<div th:insert="fragments :: footer">...</div>
+
+<script type='text/javascript' src="/js/adapters.js"></script>
+
+</body>
+</html>

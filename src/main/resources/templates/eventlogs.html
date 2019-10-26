@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>eventlogs</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://jira.xwiki.org/secure/attachment/34823/Icons8-Windows-8-Numbers-1-Black.ico" />
+
+    <div th:insert="fragments :: header">...</div>
+</head>
+<body>
+
+
+<center>
+
+    <br>
+    <br>
+    <b>Event Logs</b>
+    <br>
+    <br>
+
+
+<table class="readings" width="60%">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>TIMESTAMP</th>
+        <th>TYPE</th>
+        <th>DESCRIPTION</th>
+    </tr>
+    </thead>
+    <th:block th:each="owel : ${owEventLogs}">
+        <tr>
+            <td th:text="${owel.ID}"></td>
+            <td th:text="${owel.TIMESTAMP}"></td>
+            <td th:text="${owel.TYPE}"></td>
+            <td th:text="${owel.DESCRIPTION}"></td>
+        </tr>
+    </th:block>
+</table>
+    <br>
+    <br>
+    <br>
+</center>
+
+<div th:insert="fragments :: footer">...</div>
+</body>
+</html>

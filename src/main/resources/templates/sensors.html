@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>OwDAQ Sensors</title>
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://jira.xwiki.org/secure/attachment/34823/Icons8-Windows-8-Numbers-1-Black.ico" />
+
+
+    <div th:insert="fragments :: header">...</div>
+</head>
+<body>
+<center>
+    <br>
+    <br>
+    <b>Sensor List</b>
+    <br>
+    <br>
+
+
+    <table class="readings" width="60%">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>ADAPTER_ID</th>
+            <th>SITE_ID</th>
+            <th>ADDRESS</th>
+            <th>STATUS</th>
+            <th>action</th>
+            <th>action</th>
+        </tr>
+        </thead>
+        <th:block th:each="owsn : ${installedSensors}">
+            <tr>
+                <td th:text="${owsn.ID}"></td>
+                <td th:text="${owsn.ADAPTER_ID}"></td>
+                <td th:text="${owsn.SITE_ID}"></td>
+                <td th:text="${owsn.ADDRESS}"></td>
+                <td th:text="${owsn.STATUS}"></td>
+                <!-- <td><a th:href="@{/sensors/delete(ID=${owsn.ID})}">delete</a></td> -->
+                <td><button type="button" th:attr="id=${owsn.ID}" onclick="confirmDelete(this)">delete</button></td>
+                <td><button type="button" onclick="fillFormData(this.parentNode)">edit</button></td>
+            </tr>
+        </th:block>
+            <tr>
+                <td colspan="7"><button type="button" onclick="fillFormToAdd()" title="Click to add new sensor"><b>+</b></button></td>
+            </tr>
+    </table>
+
+    <hr>
+    <br>
+
+    <form action="#" th:action="@{/sensors}" method="POST">
+        <table>
+            <tr>
+                <td>ID:</td>
+                <td>
+                        <input readonly="true" id="fillId" type="text" name="ID" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>ADAPTER_ID:</td>
+                <td>
+                    <select name="ADAPTER_ID" id="fillAdapterId" >
+                        <option  th:each="activeadapter : ${listOfAllAdapters}" th:value="${activeadapter.ID}" th:text="${activeadapter.ID}">adapterid</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>SITE_ID:</td>
+                <td>
+                    <select name="SITE_ID" id="fillSiteId">
+                        <option  th:each="activesite : ${listOfAllSites}" th:value="${activesite.ID}" th:text="${activesite.ID}">siteid</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ADDRESS:</td>
+                <td>
+                    <input id="fillAddress" type="text" name="ADDRESS" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>STATUS:</td>
+                <td>
+                    <select id="fillStatus" name="STATUS">
+                        <option value="A">Active</option>
+                        <option value="D">Disabled</option>
+                        <option value="M">Maintenance</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</center>
+
+
+<script type='text/javascript' src="/js/sensors.js"></script>
+
+<div th:insert="fragments :: footer">...</div>
+
+</body>
+</html>

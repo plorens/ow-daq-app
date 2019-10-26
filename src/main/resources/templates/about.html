@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <br>
+    <br>
+    <br>
+
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <center>
+
+        <div th:insert="fragments :: header">...</div>
+
+    </center>
+    <!--Load the AJAX API-->
+
+    <script type='text/javascript' src="/js/about.js"></script>
+
+</head>
+
+<body>
+
+<center>
+    <img src="https://image.flaticon.com/icons/svg/46/46422.svg" />
+</center>
+
+<div th:insert="fragments :: footer">...</div>
+</body>
+
+</html>

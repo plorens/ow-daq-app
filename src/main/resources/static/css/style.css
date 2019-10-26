@@ -1,0 +1,177 @@
+<style type="text/css">
+
+
+
+
+
+
+
+
+/* ***  /replication  *** */
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana,Arial,sans-serif;
+}
+
+
+
+
+table.readings {
+    text-align:center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.readings thead {
+    font-size: 16px;
+    color: #ffffF0;
+}
+
+table.readings tbody {
+    font-size: 14px;
+    color: #000000;
+}
+
+table.readings th {
+    background-color: #205081;
+    font-color: #FFFFFF;
+    border-right: 2px solid #dbdbdb;
+    border-bottom: 2px solid #444444;
+    padding: 3px 12px;
+    white-space: nowrap;
+}
+
+table.readings td{
+    vertical-align: middle;
+    border: 1px solid #AAAAAA;
+    padding: 3px;
+}
+
+table.readings tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+table.table-list{
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+
+
+
+table.table-list tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+
+table.table-list td{
+border: 1px solid black;
+white-space: nowrap;
+}
+
+table.table-pagination {
+    width: 45em;
+    vertical-align: middle;
+}
+
+
+td.table-search{
+    vertical-align: middle;
+    color:red;
+}
+
+
+.jPaginateBack,
+.jPaginateNext {
+    background: grey;
+    line-height: 1rem;
+    width: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+li {
+    background: grey;
+    list-style-type: none;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111111;
+}
+
+.active {
+    background-color: #205081;
+}
+
+.disabled {
+    background-color: #666666;
+}
+
+ li.fragment{
+ background-color: transparent;
+ }
+
+li i {
+    color: white;
+    text-align: left;
+    padding: 14px 25px;
+    text-decoration: none;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 14px 16px;
+    background: #333333;
+    color: white;
+}
+
+
+
+
+
+input:invalid+span:after {
+  content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  content: '✓';
+  padding-left: 5px;
+}
+
+
+</style>

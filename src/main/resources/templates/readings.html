@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <!-- dodane do paginacji -->
+
+    <script src='https://static.codepen.io/assets/editor/live/console_runner-1df7d3399bdc1f40995a35209755dcfd8c7547da127f6469fd81e5fba982f6af.js'></script>
+    <script src='https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js'></script>
+    <meta charset='UTF-8'>
+    <link rel="shortcut icon" type="image/x-icon" href="https://jira.xwiki.org/secure/attachment/34823/Icons8-Windows-8-Numbers-1-Black.ico" />
+
+    <!--
+        <link rel='stylesheet' href='https://btn.ninja/css/bootstrap.css'>
+        <link rel='stylesheet' href='https://btn.ninja/css/addons.css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+        dodane do paginacji
+    -->
+
+    <title>OwDAQ Readings</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <div th:insert="fragments :: header">...</div>
+
+</head>
+<body>
+
+    <br>
+    <br>
+    <center>
+        <b>Readings</b>
+    </center>
+
+    <form action="/readings" method="GET" id="selectSiteForm">
+        <table>
+            <tr>
+                <td>Site ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="id" id="fillSiteId" onchange="document.getElementById('selectSiteForm').submit()">
+                        <option value="">Please choose site to display</option>
+                        <option  th:each="activesite : ${listOfAllSites}" th:value="${activesite.ID}" th:text="${activesite.ID} +'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+ ${activesite.DESCRIPTION}" >siteid</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <center>
+    <span>
+        <i th:unless="${siteID}">Please choose site to display</i>
+    </span>
+
+    <span th:if="${siteID}">
+
+        <b th:text="'SiteID:'+'&nbsp;'+ ${siteID} +'&nbsp;&nbsp;&nbsp;'">...</b>
+        <b th:text="${siteDescription}">...</b>
+
+        <br>
+    <span th:unless="${!listOfValueForSite.empty}">Brak pomiarow dla tego Site'a</span>
+    <span th:if="${!listOfValueForSite.empty}">
+
+    <div id="tableID" class="table-list-container">
+
+        <td>
+            <table class="table-list" data-currentpage="1" width="70%">
+                <thead>
+                    <th><button type="button" class="sort" data-sort="jSortValue">value<i class="caret"></i></button></th>
+                    <th><button type="button" class="sort" data-sort="jSortDate">date<i class="caret"></i></button></th>
+                </thead>
+
+                <tbody class="list">
+                    <th:block th:each="measurement : ${listOfValueForSite}">
+                        <tr>
+                            <td width=50% align="center" class="jSortValue" th:text="${measurement.VALUE}">filename</td>
+                            <td width=50% class="jSortDate" th:text="${measurement.TIMESTAMP}">filename</td>
+                        </tr>
+                    </th:block>
+                </tbody>
+            </table>
+
+            <table class="table-pagination" width="70%" >
+                <tr>
+                    <td>
+                        <button type="button" class="jPaginateBack"><i><<</i></button>
+                    </td>
+                    <td class="table-pagination">
+                        <ul class="pagination"></ul>
+                    </td>
+                    <td>
+                        <button type="button" class="jPaginateNext"><i>>></i></button>
+                    </td>
+                    <td class="table-search" >
+                        <input class="search" placeholder="Search">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </div>
+    </span>
+    </span>
+    </center>
+
+<br>
+<br>
+<br>
+
+<div th:insert="fragments :: footer">...</div>
+
+    <!--
+        <script src='https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js'></script>
+    -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js'></script>
+
+    <script id="pagination" type='text/javascript' src="/js/readings.js"></script>
+
+
+</body>
+</html>

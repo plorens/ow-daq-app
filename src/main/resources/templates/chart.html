@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <center>
+
+        <div th:insert="fragments :: header">...</div>
+
+    </center>
+    <!--Load the AJAX API-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+    <script type='text/javascript' src="/js/chart.js"></script>
+</head>
+
+
+<body>
+<center>
+    <br>
+    <br>
+    <b>Chart</b>
+    <br>
+
+<table>
+    <tr>
+        <td align="right">
+            <!-- Note: type="date" is not supported in Safari or Internet Explorer 11 (or earlier). -->
+            <input type="datetime-local" id="start" min="2019-09-01T00:00" max="2019-10-01T00:00">
+            <span class="validity"></span>
+        </td>
+        <td width="20%">
+            <button onclick="drawChartBetweenDates()">← Draw Chart →</button>
+        </td>
+        <td>
+            <input type="datetime-local" id="end" min="2019-09-01T00:00" max="2019-10-01T00:00">
+            <span class="validity"></span>
+        </td>
+    </tr>
+</table>
+
+    <button onclick="draw24hFromNow()">Draw last 24h</button>
+    <br>
+    <button onclick="drawPrevDayChart()">Previous Day (-24h)</button>
+    <button onclick="drawTodayDateChart()">Today</button>
+    <button onclick="drawNextDayChart()">Next Day (+24h)</button>
+
+    <br>
+
+    <table width="85%">
+        <tr>
+            <td>Starting Date: <i id="showStart"></i></td><td width="50%"></td><td align="right">End Date: <i id="showEnd"></i></td>
+        </tr>
+    </table>
+
+</center>
+
+<center>
+    <div align='left' id='chart_div' style='width: 1300px; height: 440px;'></div>
+</center>
+
+<br>
+<br>
+<br>
+
+<div th:insert="fragments :: footer">...</div>
+</body>
+
+</html>
