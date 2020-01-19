@@ -1,8 +1,9 @@
-package owdaqapp;
+package owdaqapp.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
+import owdaqapp.one_wire.OwAdapter;
 
 import java.util.List;
 
