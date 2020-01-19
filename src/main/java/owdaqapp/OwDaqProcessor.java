@@ -13,6 +13,11 @@ import org.springframework.stereotype.Component;
 import com.dalsemi.onewire.OneWireAccessProvider;
 import com.dalsemi.onewire.adapter.DSPortAdapter;
 import com.dalsemi.onewire.container.OneWireContainer;
+import owdaqapp.one_wire.OwAdapter;
+import owdaqapp.one_wire.OwEventLog;
+import owdaqapp.one_wire.OwReading;
+import owdaqapp.repositories.*;
+import owdaqapp.one_wire.OwSensor;
 
 @Component
 public class OwDaqProcessor {

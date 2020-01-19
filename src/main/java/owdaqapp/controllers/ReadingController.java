@@ -1,9 +1,15 @@
-package owdaqapp;
+package owdaqapp.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import owdaqapp.one_wire.OwAdapter;
+import owdaqapp.one_wire.OwReading;
+import owdaqapp.repositories.OwAdaptersRepository;
+import owdaqapp.repositories.OwReadingsRepository;
+import owdaqapp.repositories.OwSensorsRepository;
+import owdaqapp.repositories.OwSitesRepository;
 
 import java.util.ArrayList;
 import java.util.List;

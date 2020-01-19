@@ -5,6 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import owdaqapp.one_wire.OwReading;
+import owdaqapp.one_wire.OwSite;
+import owdaqapp.repositories.OwReadingsRepository;
+import owdaqapp.repositories.OwSitesRepository;
 
 import java.text.ParseException;
 import java.util.ArrayList;

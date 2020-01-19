@@ -1,4 +1,4 @@
-package owdaqapp;
+package owdaqapp.one_wire;
 
 import lombok.Data;
 import javax.persistence.*;

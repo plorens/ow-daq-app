@@ -1,0 +1,366 @@
+2020-01-19 14:24:51.597  INFO 2656 --- [restartedMain] owdaqapp.Application                     : Starting Application on DESKTOP-066K0D9 with PID 2656 (D:\ow-daq-app\target\classes started by US4264 in D:\ow-daq-app)
+2020-01-19 14:24:51.663  INFO 2656 --- [restartedMain] owdaqapp.Application                     : No active profile set, falling back to default profiles: default
+2020-01-19 14:24:52.270  INFO 2656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-19 14:24:52.270  INFO 2656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-19 14:24:57.210  INFO 2656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-19 14:24:57.461  INFO 2656 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211ms. Found 5 repository interfaces.
+2020-01-19 14:24:58.448  INFO 2656 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$869bad01] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-19 14:25:00.417  INFO 2656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-01-19 14:25:00.566  INFO 2656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-19 14:25:00.567  INFO 2656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-01-19 14:25:01.016  INFO 2656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-19 14:25:01.017  INFO 2656 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8746 ms
+2020-01-19 14:25:01.747  INFO 2656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-19 14:25:03.753  INFO 2656 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-19 14:25:04.113  INFO 2656 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-19 14:25:04.583  INFO 2656 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-01-19 14:25:04.585  INFO 2656 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-19 14:25:05.123  INFO 2656 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-19 14:25:05.571  INFO 2656 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-01-19 14:25:06.264  INFO 2656 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@482ae5c1
+2020-01-19 14:25:06.264  INFO 2656 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@482ae5c1
+2020-01-19 14:25:06.265  INFO 2656 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@32792087
+2020-01-19 14:25:06.265  INFO 2656 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@32792087
+2020-01-19 14:25:08.092  INFO 2656 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-19 14:25:09.259  INFO 2656 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-19 14:25:10.418  INFO 2656 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-19 14:25:10.498  WARN 2656 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-19 14:25:10.804  INFO 2656 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-19 14:25:10.999  INFO 2656 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-19 14:25:11.119  INFO 2656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-19 14:25:11.249  INFO 2656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-01-19 14:25:11.256  INFO 2656 --- [restartedMain] owdaqapp.Application                     : Started Application in 22.484 seconds (JVM running for 30.3)
+2020-01-19 14:25:11.652  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:25:12.376  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:25:17.259  INFO 2656 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-19 14:25:17.259  INFO 2656 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-19 14:25:17.280  INFO 2656 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-01-19 14:26:00.000  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:26:00.046  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:27:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:27:00.021  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:28:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:28:00.019  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:29:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:29:00.017  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:30:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:30:00.020  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:31:00.001  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:31:00.020  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:32:00.003  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:32:00.018  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:33:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:33:00.041  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:34:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:34:00.020  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:35:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:35:00.021  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:36:00.001  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:36:00.020  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:37:00.001  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:37:00.022  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:38:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:38:00.023  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:39:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:39:00.027  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:40:00.001  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:40:00.025  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:41:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:41:00.186  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:42:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:42:00.768  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:42:02.917  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:42:02.923  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:42:03.903  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:43:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:43:00.731  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:43:02.729  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:43:02.735  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:43:03.711  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:44:00.003  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:44:00.728  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:44:02.723  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:44:02.727  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:44:03.704  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:45:00.001  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:45:00.782  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:45:02.776  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:45:02.780  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:45:03.767  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:46:00.003  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:46:00.775  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:46:02.785  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:46:02.789  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:46:03.778  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:47:00.001  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:47:00.723  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:47:02.711  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:47:02.722  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:47:03.714  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:48:00.003  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:48:00.746  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:48:02.753  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:48:02.760  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:48:03.745  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:49:00.015  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:49:00.817  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:49:02.797  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:49:02.807  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:49:03.837  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:50:00.016  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:50:00.806  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:50:02.936  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:50:02.936  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:50:03.996  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:51:00.006  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:51:00.796  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:51:02.776  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:51:02.776  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:51:03.836  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:52:00.002  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:52:00.728  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:52:02.705  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:52:02.705  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:52:03.695  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:53:00.015  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:53:00.815  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:53:02.794  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:53:02.804  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:53:03.767  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:54:00.003  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:54:00.724  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:54:02.723  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:54:02.723  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:54:03.974  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 14:55:00.006  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 14:55:00.753  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 14:55:02.733  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Problem z czujnikiem
+2020-01-19 14:55:02.738  INFO 2656 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : Exception: com.dalsemi.onewire.adapter.OneWireIOException: OneWireContainer28-Error reading CRC8 from device.
+2020-01-19 14:55:03.711  INFO 2656 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:31:14.279  INFO 3108 --- [restartedMain] owdaqapp.Application                     : Starting Application on DESKTOP-066K0D9 with PID 3108 (D:\ow-daq-app\target\classes started by US4264 in D:\ow-daq-app)
+2020-01-19 15:31:14.287  INFO 3108 --- [restartedMain] owdaqapp.Application                     : No active profile set, falling back to default profiles: default
+2020-01-19 15:31:14.428  INFO 3108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-19 15:31:14.429  INFO 3108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-19 15:31:16.215  INFO 3108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-19 15:31:16.412  INFO 3108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171ms. Found 5 repository interfaces.
+2020-01-19 15:31:17.271  INFO 3108 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c1e92aa6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-19 15:31:18.456  INFO 3108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-01-19 15:31:18.506  INFO 3108 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-19 15:31:18.507  INFO 3108 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-01-19 15:31:18.874  INFO 3108 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-19 15:31:18.875  INFO 3108 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4446 ms
+2020-01-19 15:31:19.261  INFO 3108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-19 15:31:20.414  INFO 3108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-19 15:31:20.507  INFO 3108 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-19 15:31:20.720  INFO 3108 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-01-19 15:31:20.724  INFO 3108 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-19 15:31:21.238  INFO 3108 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-19 15:31:21.564  INFO 3108 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-01-19 15:31:21.908  INFO 3108 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@1018eaae
+2020-01-19 15:31:21.909  INFO 3108 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@1018eaae
+2020-01-19 15:31:21.909  INFO 3108 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@30a52838
+2020-01-19 15:31:21.909  INFO 3108 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@30a52838
+2020-01-19 15:31:23.189  INFO 3108 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-19 15:31:23.867  INFO 3108 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-19 15:31:24.779  INFO 3108 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-19 15:31:24.873  WARN 3108 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-19 15:31:25.123  INFO 3108 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-19 15:31:25.266  INFO 3108 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-19 15:31:25.365  INFO 3108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-19 15:31:25.521  INFO 3108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-01-19 15:31:25.526  INFO 3108 --- [restartedMain] owdaqapp.Application                     : Started Application in 11.974 seconds (JVM running for 13.077)
+2020-01-19 15:31:25.904  INFO 3108 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:31:26.322  INFO 3108 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:31:55.166  INFO 3108 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-19 15:31:55.166  INFO 3108 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-19 15:31:55.192  INFO 3108 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2020-01-19 15:32:00.001  INFO 3108 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:32:00.036  INFO 3108 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:33:00.001  INFO 3108 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:33:00.032  INFO 3108 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:33:21.908  INFO 9928 --- [restartedMain] owdaqapp.Application                     : Starting Application on DESKTOP-066K0D9 with PID 9928 (D:\ow-daq-app\target\classes started by US4264 in D:\ow-daq-app)
+2020-01-19 15:33:21.916  INFO 9928 --- [restartedMain] owdaqapp.Application                     : No active profile set, falling back to default profiles: default
+2020-01-19 15:33:22.113  INFO 9928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-19 15:33:22.113  INFO 9928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-19 15:33:24.823  INFO 9928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-19 15:33:24.958  INFO 9928 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125ms. Found 5 repository interfaces.
+2020-01-19 15:33:25.713  INFO 9928 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cb762a89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-19 15:33:26.808  INFO 9928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-01-19 15:33:26.863  INFO 9928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-19 15:33:26.863  INFO 9928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-01-19 15:33:27.253  INFO 9928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-19 15:33:27.253  INFO 9928 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5140 ms
+2020-01-19 15:33:27.593  INFO 9928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-19 15:33:28.869  INFO 9928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-19 15:33:29.043  INFO 9928 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-19 15:33:29.685  INFO 9928 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-01-19 15:33:29.723  INFO 9928 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-19 15:33:30.303  INFO 9928 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-19 15:33:31.377  INFO 9928 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-01-19 15:33:31.808  INFO 9928 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@19164917
+2020-01-19 15:33:31.808  INFO 9928 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@19164917
+2020-01-19 15:33:31.808  INFO 9928 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@7c6b9cd1
+2020-01-19 15:33:31.808  INFO 9928 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@7c6b9cd1
+2020-01-19 15:33:32.812  INFO 9928 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-19 15:33:33.676  INFO 9928 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-19 15:33:35.578  INFO 9928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-19 15:33:35.698  WARN 9928 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-19 15:33:36.008  INFO 9928 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-19 15:33:36.333  INFO 9928 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-19 15:33:36.582  INFO 9928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-19 15:33:36.743  INFO 9928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-01-19 15:33:36.935  INFO 9928 --- [restartedMain] owdaqapp.Application                     : Started Application in 15.89 seconds (JVM running for 17.162)
+2020-01-19 15:33:37.313  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:33:39.143  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:33:43.203  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:34:00.022  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:34:00.862  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:34:04.842  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:34:17.191  INFO 9928 --- [http-nio-8081-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-19 15:34:17.191  INFO 9928 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-19 15:34:17.209  INFO 9928 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-01-19 15:35:00.013  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:35:00.742  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:35:04.732  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:36:00.004  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:36:00.741  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:36:04.681  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:37:00.011  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:37:00.752  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:37:04.650  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:38:00.011  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:38:00.740  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:38:04.770  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:39:00.002  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:39:00.722  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:39:05.805  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:40:00.009  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:40:00.849  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:40:04.738  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:41:00.002  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:41:00.808  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:41:04.682  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:42:00.002  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:42:00.807  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:42:04.737  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:43:00.002  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:43:00.810  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:43:04.716  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:44:00.002  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:44:00.725  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:44:04.673  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:45:00.002  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:45:00.735  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:45:04.695  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:46:00.004  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:46:00.744  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:46:04.674  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:47:00.003  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:47:01.077  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:47:05.003  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:48:00.002  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:48:00.735  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:48:04.655  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:49:00.003  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:49:00.744  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:49:04.794  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:50:00.003  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:50:00.733  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:50:04.684  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:51:00.017  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:51:01.095  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:51:05.269  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:52:00.002  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:52:00.801  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:52:04.825  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:53:00.004  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:53:00.816  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:53:04.851  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:54:00.003  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:54:00.841  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:54:05.303  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:55:00.000  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:55:00.740  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:55:04.680  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:56:00.004  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:56:00.740  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:56:04.640  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:57:00.002  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:57:00.789  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:57:04.661  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:58:00.001  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:58:00.724  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:58:04.581  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 15:59:00.017  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 15:59:00.868  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 15:59:04.748  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 16:00:00.007  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 16:00:00.857  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 16:00:05.066  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 16:01:00.006  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 16:01:00.858  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 16:01:04.747  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 16:02:00.015  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 16:02:00.757  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 16:02:04.825  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 16:03:00.019  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 16:03:00.929  INFO 9928 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 16:03:04.929  INFO 9928 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 16:04:13.673  INFO 11272 --- [restartedMain] owdaqapp.Application                     : Starting Application on DESKTOP-066K0D9 with PID 11272 (D:\ow-daq-app\target\classes started by US4264 in D:\ow-daq-app)
+2020-01-19 16:04:13.679  INFO 11272 --- [restartedMain] owdaqapp.Application                     : No active profile set, falling back to default profiles: default
+2020-01-19 16:04:13.803  INFO 11272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-19 16:04:13.803  INFO 11272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-19 16:04:16.078  INFO 11272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-19 16:04:16.208  INFO 11272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120ms. Found 5 repository interfaces.
+2020-01-19 16:04:16.908  INFO 11272 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$335d6faf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-19 16:04:18.033  INFO 11272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-01-19 16:04:18.088  INFO 11272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-19 16:04:18.088  INFO 11272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-01-19 16:04:18.455  INFO 11272 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-19 16:04:18.458  INFO 11272 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4655 ms
+2020-01-19 16:04:18.836  INFO 11272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-19 16:04:19.978  INFO 11272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-19 16:04:20.078  INFO 11272 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-19 16:04:20.293  INFO 11272 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-01-19 16:04:20.323  INFO 11272 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-19 16:04:20.789  INFO 11272 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-19 16:04:21.148  INFO 11272 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-01-19 16:04:21.548  INFO 11272 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@41ca3eef
+2020-01-19 16:04:21.548  INFO 11272 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@41ca3eef
+2020-01-19 16:04:21.548  INFO 11272 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@1bbfebfb
+2020-01-19 16:04:21.548  INFO 11272 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@1bbfebfb
+2020-01-19 16:04:22.668  INFO 11272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-19 16:04:23.478  INFO 11272 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-19 16:04:24.393  INFO 11272 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-19 16:04:24.470  WARN 11272 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-19 16:04:24.702  INFO 11272 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-01-19 16:04:24.853  INFO 11272 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-19 16:04:24.934  INFO 11272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-19 16:04:25.028  INFO 11272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-01-19 16:04:25.035  INFO 11272 --- [restartedMain] owdaqapp.Application                     : Started Application in 12.137 seconds (JVM running for 13.291)
+2020-01-19 16:04:25.275  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 16:04:26.638  INFO 11272 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 16:04:30.633  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 16:04:45.154  INFO 11272 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-19 16:04:45.155  INFO 11272 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-19 16:04:45.180  INFO 11272 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2020-01-19 16:05:00.018  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 16:05:00.867  INFO 11272 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 16:05:04.778  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 16:06:00.017  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 16:06:00.857  INFO 11272 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 16:06:04.793  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 16:07:00.016  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 16:07:00.856  INFO 11272 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 16:07:05.507  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
+2020-01-19 16:08:00.006  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : before measurement
+2020-01-19 16:08:00.866  INFO 11272 --- [scheduling-1] owdaqapp.OwDaqProcessor                  : adapter ready
+2020-01-19 16:08:04.886  INFO 11272 --- [scheduling-1] owdaqapp.OwScheduler                     : after measurement
