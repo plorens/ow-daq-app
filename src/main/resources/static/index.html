@@ -11,25 +11,24 @@
 
     <header>
         <li class="fragment"><a class="active" href="/index.html">Home</a></li>
+        <li class="fragment"><a href="/readings">Readings</a></li>
         <li class="fragment"><a href="/chart">Chart</a></li>
         <li class="fragment"><a href="/about">About</a></li>
+        <li class="fragment_login"><a href="/test">Login</a></li>
         <li class="fragment_login">
-            <form method="POST" action="/test" class="foundation-style" id="bestForm">
+            <form method="POST" action="/test" class="login" id="bestForm">
                 <table>
                     <tr>
                         <td>
                             <input id="fillLogin" type="text" placeholder="login" name="login">
                         </td>
                         <td>
-                            <input type="password" placeholder="hasło" name="password">
+                            <input id="fillPassword" type="password" placeholder="password" name="password">
                         </td>
                         <td>
                             <button class="login_button" type="submit" value="Login">
-                                Zaloguj się
+                                Log in
                             </button>
-                        </td>
-                        <td>
-                        <a href="/test">login</a>
                         </td>
                     </tr>
                 </table>
@@ -50,14 +49,11 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
         <b>Widok główny</b>
         <br>
         <br>
         <br>
-        <br>
-        <br>
+
 
         <div id="siteNameTable" style="width: 100%;"></div>
         <div id="chart_div" style="width: 100%;"></div>

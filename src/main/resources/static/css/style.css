@@ -1,10 +1,13 @@
 <style type="text/css">
 
 
+html {
+    margin: 0px;
+}
+
 body{
     padding: 0px;
     margin: 0px;
-    font-family: Verdana,Arial,sans-serif;
 }
 
 
@@ -43,22 +46,14 @@ table.readings tr:nth-child(even) {
     background-color: #f0f0f0;
 }
 
-
-
-
-
 table.table-list{
 border: 1px solid black;
 border-collapse: collapse;
 }
 
-
-
-
 table.table-list tr:nth-child(even) {
     background-color: #f0f0f0;
 }
-
 
 table.table-list td{
 border: 1px solid black;
@@ -70,12 +65,10 @@ table.table-pagination {
     vertical-align: middle;
 }
 
-
 td.table-search{
     vertical-align: middle;
     color:red;
 }
-
 
 .jPaginateBack,
 .jPaginateNext {
@@ -87,6 +80,15 @@ td.table-search{
 
 
 
+div.chart_div {
+    width: 90%;
+    height: 600px;
+}
+
+
+form.login {
+ padding: 10px 10px;
+}
 
 
 
@@ -126,12 +128,31 @@ li.fragment_login{
     float: right;
 }
 
+li.fragment_logout{
+    float: right;
+}
+
 li i {
     color: white;
     text-align: left;
     padding: 14px 25px;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 header {
@@ -153,9 +174,6 @@ footer {
     background: #333333;
     color: white;
 }
-
-
-
 
 
 input:invalid+span:after {

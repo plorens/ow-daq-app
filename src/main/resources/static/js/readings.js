@@ -1,7 +1,7 @@
 
 var options = {
   valueNames: ['jSortValue', 'jSortDate'],
-  page: 20,
+  page: 30,
   pagination: {
     innerWindow: 1,
     left: 1,

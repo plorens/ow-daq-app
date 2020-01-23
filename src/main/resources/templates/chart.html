@@ -4,9 +4,12 @@
 <head>
 
     <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://jira.xwiki.org/secure/attachment/34823/Icons8-Windows-8-Numbers-1-Black.ico" />
+    <title>OwDAQ Chart</title>
+
     <center>
 
-        <div th:insert="fragments :: header">...</div>
+        <div th:insert="fragments :: header_guest">...</div>
 
     </center>
     <!--Load the AJAX API-->
@@ -20,9 +23,11 @@
 <center>
     <br>
     <br>
-    <b>Chart</b>
     <br>
-
+    <br>
+    <b>Graph of temperature changes from all active measuring points</b>
+    <br>
+    <br>
 <table>
     <tr>
         <td align="right">
@@ -40,6 +45,7 @@
     </tr>
 </table>
 
+    <br>
     <button onclick="draw24hFromNow()">Draw last 24h</button>
     <br>
     <button onclick="drawPrevDayChart()">Previous Day (-24h)</button>
@@ -54,15 +60,8 @@
         </tr>
     </table>
 
+    <div align='left' class="chart_div" id='chart_div'></div>
 </center>
-
-<center>
-    <div align='left' id='chart_div' style='width: 1300px; height: 600px;'></div>
-</center>
-
-<br>
-<br>
-<br>
 
 <div th:insert="fragments :: footer">...</div>
 </body>

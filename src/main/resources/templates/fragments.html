@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<!--
+
 <header th:fragment="header">
     <li class="fragment"><a class="active" href="/index.html">Home</a></li>
     <li class="fragment"><a href="/readings">Readings</a></li>
@@ -17,8 +19,30 @@
     <li class="fragment"><a href="/sensors">Sensors</a></li>
     <li class="fragment"><a href="/chart">Chart</a></li>
     <li class="fragment"><a href="/eventlogs">EventLogs</a></li>
+    <li class="fragment"><a href="/user">User</a></li>
     <li class="fragment"><a href="/about">About</a></li>
     <li class="fragment"><a href="/test">test</a></li>
+    <li class="fragment_logout"><a href="/">Logout</a></li>
+</header>
+
+-->
+
+<header th:fragment="header_guest">
+    <li class="fragment"><a class="active" href="/index.html">Home</a></li>
+    <li class="fragment"><a href="/readings">Readings</a></li>
+    <li class="fragment"><a href="/chart">Chart</a></li>
+    <li class="fragment"><a href="/about">About</a></li>
+</header>
+
+<header th:fragment="header_admin">
+    <li class="fragment"><a class="active" href="/index.html">Home</a></li>
+    <li class="fragment"><a href="/adapters">Adapters</a></li>
+    <li class="fragment"><a href="/sites">Sites</a></li>
+    <li class="fragment"><a href="/sensors">Sensors</a></li>
+    <li class="fragment"><a href="/eventlogs">EventLogs</a></li>
+    <li class="fragment"><a href="/user">User</a></li>
+    <li class="fragment"><a href="/test">test</a></li>
+    <li class="fragment_logout"><a href="/">Logout</a></li>
 </header>
 
 <footer th:fragment="footer">
