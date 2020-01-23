@@ -1,20 +1,11 @@
 <style type="text/css">
 
 
-
-
-
-
-
-
-/* ***  /replication  *** */
 body{
     padding: 0px;
     margin: 0px;
     font-family: Verdana,Arial,sans-serif;
 }
-
-
 
 
 table.readings {
@@ -130,6 +121,10 @@ li a:hover:not(.active) {
  li.fragment{
  background-color: transparent;
  }
+
+li.fragment_login{
+    float: right;
+}
 
 li i {
     color: white;
