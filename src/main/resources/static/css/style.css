@@ -8,6 +8,7 @@ html {
 body{
     padding: 0px;
     margin: 0px;
+    font-size: 16px;
 }
 
 
@@ -82,17 +83,13 @@ td.table-search{
 
 div.chart_div {
     width: 90%;
-    height: 600px;
+    height: 450px;
 }
 
 
 form.login {
- padding: 10px 10px;
+ padding: 6px;
 }
-
-
-
-
 
 li {
     background: grey;
@@ -104,7 +101,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
 }
 
@@ -135,7 +132,7 @@ li.fragment_logout{
 li i {
     color: white;
     text-align: left;
-    padding: 14px 25px;
+    padding: 10px 25px;
     text-decoration: none;
 }
 
@@ -170,7 +167,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 14px 16px;
+    padding: 10px 16px;
     background: #333333;
     color: white;
 }

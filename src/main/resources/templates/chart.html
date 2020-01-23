@@ -2,20 +2,16 @@
 <html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-
+    <title>OwDAQ Chart</title>
     <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="https://jira.xwiki.org/secure/attachment/34823/Icons8-Windows-8-Numbers-1-Black.ico" />
-    <title>OwDAQ Chart</title>
 
-    <center>
-
-        <div th:insert="fragments :: header_guest">...</div>
-
-    </center>
     <!--Load the AJAX API-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
     <script type='text/javascript' src="/js/chart.js"></script>
+
+    <div th:insert="fragments :: header_guest">...</div>
 </head>
 
 
@@ -23,10 +19,7 @@
 <center>
     <br>
     <br>
-    <br>
-    <br>
-    <b>Graph of temperature changes from all active measuring points</b>
-    <br>
+    <b>Graph of temperature changes from all active sites</b>
     <br>
 <table>
     <tr>
@@ -44,8 +37,6 @@
         </td>
     </tr>
 </table>
-
-    <br>
     <button onclick="draw24hFromNow()">Draw last 24h</button>
     <br>
     <button onclick="drawPrevDayChart()">Previous Day (-24h)</button>

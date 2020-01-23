@@ -32,7 +32,29 @@
     <li class="fragment"><a href="/readings">Readings</a></li>
     <li class="fragment"><a href="/chart">Chart</a></li>
     <li class="fragment"><a href="/about">About</a></li>
+    <li class="fragment_login"><a href="/users">Login</a></li>
+    <li class="fragment_login">
+        <form method="POST" action="/test" class="login" id="bestForm">
+            <table>
+                <tr>
+                    <td>
+                        <input id="fillLogin" type="text" placeholder="login" name="login">
+                    </td>
+                    <td>
+                        <input id="fillPassword" type="password" placeholder="password" name="password">
+                    </td>
+                    <td>
+                        <button class="login_button" type="submit" value="Login">
+                            Log in
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </li>
 </header>
+
+
 
 <header th:fragment="header_admin">
     <li class="fragment"><a class="active" href="/index.html">Home</a></li>
@@ -40,14 +62,14 @@
     <li class="fragment"><a href="/sites">Sites</a></li>
     <li class="fragment"><a href="/sensors">Sensors</a></li>
     <li class="fragment"><a href="/eventlogs">EventLogs</a></li>
-    <li class="fragment"><a href="/user">User</a></li>
+    <li class="fragment"><a href="/users">Users</a></li>
     <li class="fragment"><a href="/test">test</a></li>
     <li class="fragment_logout"><a href="/">Logout</a></li>
 </header>
 
 <footer th:fragment="footer">
-    <li class="fragment"><i>Copyright © Piotr Company</i></li>
-    <li class="fragment"><i>tytyryty</i></li>
+    <li class="fragment"><i>WBD – druga część projektu</i></li>
+    <li class="fragment"><i>Autorzy: Piotr Lorens i Michał Nielipiński</i></li>
 </footer>
 
 
