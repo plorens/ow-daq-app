@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @org.springframework.stereotype.Controller
-public class TestController {
+public class HomeController {
 
 
-    @GetMapping("/test")
+    @GetMapping("/home")
     public String showAbout(Model model) {
 
-        return "test";
+        return "home";
     }
 
 }

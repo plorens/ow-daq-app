@@ -123,6 +123,7 @@ li a:hover:not(.active) {
 
 li.fragment_login{
     float: right;
+    padding: 9px;
 }
 
 li.fragment_logout{
