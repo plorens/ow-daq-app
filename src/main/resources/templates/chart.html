@@ -2,17 +2,16 @@
 <html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-
+    <title>OwDAQ Chart</title>
     <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
-    <center>
+    <link rel="shortcut icon" type="image/x-icon" href="https://jira.xwiki.org/secure/attachment/34823/Icons8-Windows-8-Numbers-1-Black.ico" />
 
-        <div th:insert="fragments :: header">...</div>
-
-    </center>
     <!--Load the AJAX API-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
     <script type='text/javascript' src="/js/chart.js"></script>
+
+    <div th:insert="fragments :: header_guest">...</div>
 </head>
 
 
@@ -20,26 +19,24 @@
 <center>
     <br>
     <br>
-    <b>Chart</b>
+    <b>Graph of temperature changes from all active sites</b>
     <br>
-
 <table>
     <tr>
         <td align="right">
             <!-- Note: type="date" is not supported in Safari or Internet Explorer 11 (or earlier). -->
-            <input type="datetime-local" id="start" min="2019-09-01T00:00" max="2019-10-01T00:00">
+            <input type="datetime-local" id="start" min="2020-01-01T00:00" max="2020-12-31T00:00">
             <span class="validity"></span>
         </td>
         <td width="20%">
             <button onclick="drawChartBetweenDates()">← Draw Chart →</button>
         </td>
         <td>
-            <input type="datetime-local" id="end" min="2019-09-01T00:00" max="2019-10-01T00:00">
+            <input type="datetime-local" id="end" min="2020-01-01T00:00" max="2020-12-31T00:00">
             <span class="validity"></span>
         </td>
     </tr>
 </table>
-
     <button onclick="draw24hFromNow()">Draw last 24h</button>
     <br>
     <button onclick="drawPrevDayChart()">Previous Day (-24h)</button>
@@ -54,15 +51,8 @@
         </tr>
     </table>
 
+    <div align='left' class="chart_div" id='chart_div'></div>
 </center>
-
-<center>
-    <div align='left' id='chart_div' style='width: 1300px; height: 440px;'></div>
-</center>
-
-<br>
-<br>
-<br>
 
 <div th:insert="fragments :: footer">...</div>
 </body>

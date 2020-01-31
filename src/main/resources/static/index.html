@@ -12,31 +12,40 @@
     <header>
         <li class="fragment"><a class="active" href="/index.html">Home</a></li>
         <li class="fragment"><a href="/readings">Readings</a></li>
-        <li class="fragment"><a href="/adapters">Adapters</a></li>
-        <li class="fragment"><a href="/sites">Sites</a></li>
-        <li class="fragment"><a href="/sensors">Sensors</a></li>
         <li class="fragment"><a href="/chart">Chart</a></li>
-        <li class="fragment"><a href="/eventlogs">EventLogs</a></li>
         <li class="fragment"><a href="/about">About</a></li>
-
+        <li class="fragment_login">
+            <form name="login">
+                            <input type="text" id="fillLogin"  placeholder="login" name="login">
+                            <input type="password" id="fillPassword"  placeholder="password" name="password">
+                            <button class="login_button" onclick="check(this.form)" type="button" value="Login">
+                                Log in
+                            </button>
+            </form>
+        </li>
     </header>
-
 </head>
 
 <body>
+        <center>
 
-    <center>
+        <br>
+        <br>
+        <br>
+        <b>
+        “OwDAQ”
+        <br>
+        One Wire Data Acquisition
+        </b>
+        <br>
+        <i>System akwizycji danych o temperaturze otoczenia w oparciu o sieć 1-Wire</i>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
         <div id="siteNameTable" style="width: 100%;"></div>
         <div id="chart_div" style="width: 100%;"></div>
@@ -44,8 +53,8 @@
     </center>
 
     <footer>
-        <li class="fragment"><i>Copyright © Piotr Company</i></li>
-        <li class="fragment"><i>tytyryty</i></li>
+        <li class="fragment"><i>WBD – druga część projektu</i></li>
+        <li class="fragment"><i>Autorzy: Piotr Lorens i Michał Nielipiński</i></li>
     </footer>
 
 

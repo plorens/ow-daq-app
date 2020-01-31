@@ -41,7 +41,6 @@ public class OwDaqProcessor {
 
 
 
-
     private void processTemp(DSPortAdapter adapter, OwSensor owsensor) throws OneWireException {
 
         OneWireContainer owc = adapter.getDeviceContainer(owsensor.getADDRESS());

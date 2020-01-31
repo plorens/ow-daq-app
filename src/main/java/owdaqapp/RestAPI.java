@@ -7,8 +7,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import owdaqapp.one_wire.OwReading;
 import owdaqapp.one_wire.OwSite;
+import owdaqapp.one_wire.OwUsers;
 import owdaqapp.repositories.OwReadingsRepository;
 import owdaqapp.repositories.OwSitesRepository;
+import owdaqapp.repositories.OwUsersRepository;
 
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -24,6 +26,9 @@ public class RestAPI {
     @Autowired
     private OwReadingsRepository owReadingsRepository;
 
+    @Autowired
+    private OwUsersRepository owUsersRepository;
+
     @GetMapping("/API/currentReading")
     public SingleReadingData getCurrentReading(@RequestParam(name="siteid",   required = true) Long siteId)   {
 
@@ -38,6 +43,7 @@ public class RestAPI {
 
         return srd;
     }
+
 
 
     @GetMapping("/API/currentReadings")
@@ -63,6 +69,16 @@ public class RestAPI {
             owReadingList.add(srd);
         }
         return owReadingList;
+    }
+
+    @GetMapping("/API/usersList")
+    public List<OwUsers> getUserList(){
+
+        List<OwUsers> owUserList= new ArrayList<>();
+
+        owUserList=owUsersRepository.findAllUsers();
+
+        return owUserList;
     }
 
 

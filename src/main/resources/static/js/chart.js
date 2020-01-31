@@ -164,7 +164,7 @@ function drawChart(begin, end) {
         displayDateBarSeparator: true,
         dateFormat: "yyyy-MM-dd HH:mm",
         legendPosition: "newRow",
-        displayRangeSelector: true,
+        displayRangeSelector: false,
         interpolateNulls: true
     };
 
