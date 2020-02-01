@@ -1,17 +1,21 @@
 # ow-daq-app
 Projekt i implementacja systemu akwizycji danych o temperaturze otoczenia w oparciu o  sieć 1-Wire
 
-|  guest panel           |  admin panel |
-|---------------------|----------------------|
-|![Screen_home](images/Screen_home.png)| ![Screen_adapters](images/Screen_adapters.png)|
-|![Screen_readings](images/Screen_readings.png)| ![Screen_sites](images/Screen_sites.png)|
-|![Screen_chart](images/Screen_chart.png)| ![Screen_sensors](images/Screen_sensors.png)|
-|| ![Screen_eventlogs](images/Screen_eventlogs.png)|
-|| ![Screen_users](images/Screen_users.png)|
-
- ![ow-daq_schema](images/ow-daq_schema.png)
- 
-  ![ow-daq_model](images/ow-daq_model.png)
+|guest panel|
+|------------------------------------|
+|![Screen_home](images/Screen_home.png)|
+|![Screen_readings](images/Screen_readings.png) |admin panel|
+|![Screen_chart](images/Screen_chart.png)|
+|admin panel|
+||
+|![Screen_adapters](images/Screen_adapters.png)|
+|![Screen_sites](images/Screen_sites.png)|
+|![Screen_sensors](images/Screen_sensors.png)|
+|![Screen_eventlogs](images/Screen_eventlogs.png)|
+|![Screen_users](images/Screen_users.png)|
+||
+|![ow-daq_schema](images/ow-daq_schema.png)|
+|![ow-daq_model](images/ow-daq_model.png)|
 
 ### Tech
 
