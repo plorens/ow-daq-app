@@ -25,7 +25,7 @@ var users= getUsersFromREST();
         {
             if(form.login.value == users[j].login && form.password.value == users[j].password)
                 {
-                    window.location.replace('/users')
+                    window.location.replace('/home')
                     return
                 }
         }
