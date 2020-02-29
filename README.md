@@ -1,21 +1,38 @@
-# ow-daq-app
-Projekt i implementacja systemu akwizycji danych o temperaturze otoczenia w oparciu o  sieć 1-Wire
+# One wire data acquisition
+
+**Projekt i implementacja systemu akwizycji danych o temperaturze otoczenia w oparciu o  sieć 1-Wire** 
+
+Celem projektu jest zbudowanie systemu akwizycji danych pomiarowych (temperatura)
+współpracującego z siecią 1-Wire i posiadającego wielodostępne interfejsy - GUI dla człowieka oraz API dla
+użytkowników aplikacyjnych (np. wizualizacje w LabVIEW)
+
+System ma współpracować z dowolną, konfigurowalną ilością czujników temperatury, ustawienia systemu
+jak i dane pomiarowe mają być przechowywane w zdalnej, relacyjnej bazie danych.
+
+|Model & schema|
+|------------------------------------|
+|![ow-daq_model](images/ow-daq_model.png)|
+|![ow-daq_schema](images/ow-daq_schema.png)|
+
+
+
 
 |guest panel|
 |------------------------------------|
 |![Screen_home](images/Screen_home.png)|
 |![Screen_readings](images/Screen_readings.png) |admin panel|
 |![Screen_chart](images/Screen_chart.png)|
+
+
+
 |admin panel|
-||
+|------------------------------------|
 |![Screen_adapters](images/Screen_adapters.png)|
 |![Screen_sites](images/Screen_sites.png)|
 |![Screen_sensors](images/Screen_sensors.png)|
 |![Screen_eventlogs](images/Screen_eventlogs.png)|
 |![Screen_users](images/Screen_users.png)|
-||
-|![ow-daq_schema](images/ow-daq_schema.png)|
-|![ow-daq_model](images/ow-daq_model.png)|
+
 
 ### Tech
 
@@ -44,16 +61,7 @@ Dversion=12.2.0.1 -Dpackaging=jar
 
 
 
-
-### Installation
-
-xxx:
-```
-
-```
-
-
 ### Todos
 
- - xxx
- - xxx
+ - Dodanie indykatorów zdarzeń alarmowych (przekroczeń wartości temperatury, awarii lub niedostępności czujników)
+ - Dodanie obsługi czujników wilgotności 
