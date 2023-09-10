@@ -55,8 +55,7 @@ mvn install:install-file -Dfile=OneWireAPI.jar -DgroupId=additional.libs -Dartif
 mvn install:install-file -Dfile=RXTXcomm.jar -DgroupId=additional.libs -DartifactId=RXTXcomm-lib -Dversion=1.0  -Dpackaging=jar -DgeneratePom=true
 ```
 ```
-mvn install:install-file -Dfile= ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -
-Dversion=12.2.0.1 -Dpackaging=jar
+mvn install:install-file -Dfile=ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar -DgeneratePom=true
 ```
 
 
